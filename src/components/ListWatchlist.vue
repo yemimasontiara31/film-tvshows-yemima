@@ -1,18 +1,22 @@
 <template>
-  <div class="container px-[80px] my-5 flex gap-5 items-center">
+  <div class="container px-[20px] sm:px-[80px] my-5 flex gap-5 items-center">
     <h2 class="text-2xl font-bold">My Watchlist</h2>
 
     <div @click="setActiveTab('film')" :class="{ 'active text-blue1 border-b-2 border-solid pb-[5px] border-blue1': activeTab === 'film' }" class="cursor-pointer">
-      <h3>Film  <span class="text-black">( {{ watchMovies.length }} ) </span> </h3>
+      <h3 class="text-[13px] sm:text-[20px]">Film  
+        <span class="text-black">( {{ watchMovies.length }} ) </span> 
+      </h3>
     </div>
 
     <div @click="setActiveTab('tv')" :class="{ 'active text-blue1 border-b-2 border-solid pb-[5px] border-blue1': activeTab === 'tv' }" class="cursor-pointer">
-      <h3>TV Shows <span class="text-black">( {{ watchTVShow.length }} ) </span></h3>
+      <h3 class="text-[13px] sm:text-[20px]">TV Shows 
+        <span class="text-black">( {{ watchTVShow.length }} ) </span>
+      </h3>
     </div>
   </div>
 
   <div v-if="activeTab === 'film'">
-    <div class="container px-[80px] mx-auto">
+    <div class="container px-[0px] xl:px-[80px] mx-auto mb-[40px]">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-6">
           <div v-for="item in watchMovies" :key="item.id" class="relative col-span-1 gap-2 item transition-transform transform hover:scale-105 shadow-md rounded-lg p-[20px]">
             <router-link :to="{ name: 'movieDetail', params: { id: item.id } }">
@@ -43,7 +47,7 @@
   </div>
 
   <div v-if="activeTab === 'tv'">
-    <div class="container px-[80px] mx-auto">
+    <div class="container px-[0px] xl:px-[80px] mx-auto mb-[40px]">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-6">
           <div v-for="item in watchTVShow" :key="item.id" class="relative col-span-1 gap-2 item transition-transform transform hover:scale-105 shadow-md rounded-lg p-[20px]">
             <router-link :to="{ name: 'movieDetail', params: { id: item.id } }">

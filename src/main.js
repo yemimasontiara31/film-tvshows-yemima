@@ -15,25 +15,6 @@ const routes = [
   { path: '/watchlist', name: 'watchlist', component: ListWatchlist },
   { path: '/detail-movies/:id', component: MovieDetail, name: 'movieDetail' },
   { path: '/detail-tv-shows/:id', component: TVDetail, name: 'TVDetail' },
-
-//   {
-//     path: '/popular-movies',
-//     name: 'PopularMovies',
-//     component: ListPopularMovies,
-//     meta: { ariaCurrent: true }
-//   },
-//   {
-//     path: '/popular-tv-shows',
-//     name: 'PopularTVShows',
-//     component: ListPopularTVShows,
-//     meta: { ariaCurrent: true }
-//   },
-//   {
-//     path: '/watchlist',
-//     name: 'Watchlist',
-//     component: ListWatchlist,
-//     meta: { ariaCurrent: true }
-//   },
 ];
 
 const router = createRouter({

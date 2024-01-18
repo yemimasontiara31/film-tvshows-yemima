@@ -2,7 +2,7 @@
   <div>
 
     <div class="top mt-10">
-      <div class="columns mx-[80px]">
+      <div class="columns mx-[20px] sm:mx-[80px]">
         <div class="column relative is-full featured_wrapper p-0">
           <img
             v-if="featuredMovie"
@@ -10,9 +10,9 @@
             class="featured w-full rounded-xl"
             :alt="featuredMovie.title"
           >
-          <div class="title_wrapper absolute top-[50px] left-[40px]" v-if="featuredMovie">
+          <div class="title_wrapper absolute top-[50px] left-[20px] sm:left-[40px]" v-if="featuredMovie">
             <h2 class="text-red font-bold">Trending Today</h2>
-            <h1 class="title text-white mt-[-35px]">{{featuredMovie.original_title}}</h1>
+            <h1 class="title text-white mt-[-20px] sm:mt-[-35px] text-[50px] sm:text-[100px]">{{featuredMovie.original_title}}</h1>
           </div>
         </div>
       </div>
@@ -20,7 +20,7 @@
 
     <h2 class="text-2xl text-red font-bold mb-4 mt-10 text-center">Popular Films</h2>
 
-    <div class="container px-[80px] mx-auto">
+    <div class="container px-[20px] xl:px-[80px] mx-auto">
       <div class="mb-4">
         <input v-model="searchQuery" @input="searchMovies" placeholder="Search Movies..." class="p-2 border border-gray-300 rounded-md w-full">
       </div>

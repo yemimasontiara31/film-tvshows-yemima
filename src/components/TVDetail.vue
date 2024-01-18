@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-[300px]">
+  <div class="detail-tv">
     <div class="top-details z-0">
       <div class="columns">
         <div class="column relative is-full featured_wrapper p-0">
@@ -21,12 +21,12 @@
       </div>
     </div>
 
-    <div class="container px-[80px] mx-auto pb-[50px] z-40">
-      <div class="poster-tv absolute bottom-[-150px]">
+    <div class="container grid sm:flex px-[20px] sm:px-[80px] gap-5 sm:gap-20 mb-[60px]">
+      <div class="poster-tv mt-[-80px] z-40 flex justify-center">
         <img :src="'https://image.tmdb.org/t/p/w185_and_h278_bestv2/' + tvDetails.poster_path" class="h-[450px] rounded-lg ">
       </div> 
 
-      <div class="px-[50px] mt-5 mb-[100px] mx-auto absolute left-[30%] w-[65%]">
+      <div class="w-[100%] sm:w-[50%] mt-[20px]">
         <h1 class="text-6xl">{{ tvDetails.name }}</h1>
 
         <div class="mt-5 flex gap-4">
@@ -38,12 +38,7 @@
         <p class="text-blue1">{{tvDetails.tagline}}</p>
         <p class="mt-5">{{ tvDetails.overview }}</p>
       </div>
-    </div> 
-
-    <!-- <div class="container px-[50px] mx-auto absolute left-[50%] w-[50%]">
-      <h1 class="text-6xl">{{ tvDetails.original_title }}</h1>
-      <p class="mt-5">{{ tvDetails.overview }}</p>
-    </div> -->
+    </div>
   </div>
 </template>
 

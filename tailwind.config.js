@@ -20,7 +20,6 @@ module.exports = {
           gray4: "#BDBDBD",
           gray5: "#E0E0E0",
           gray6: "#F2F2F2",
-          graychat: "#F8F8F8",
           menublue: "#2F80ED",
           blue1: "#2F80ED",
           lightblue: "#E9F3FF",
