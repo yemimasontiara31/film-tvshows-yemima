@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="movie-detail">
     <div class="top-details z-0">
       <div class="columns">
         <div class="column relative is-full featured_wrapper p-0">
@@ -20,19 +20,6 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="container px-[20px] lg:px-[80px] relative mx-auto mb-[70%] xl:mb-[30%] z-40">
-      <div class="poster-movies absolute top-[-60px]">
-        <img :src="'https://image.tmdb.org/t/p/w185_and_h278_bestv2/' + movieDetails.poster_path" class="h-[450px] rounded-lg ">
-      </div> 
-
-      <div class="px-[50px] mt-5 mb-[100px] mx-auto absolute top-[50px] lg:left-[40%] xl:left-[30%] w-[100%] md:w-[60%] lg:w-[50%]">
-        <h1 class="text-6xl">{{ movieDetails.original_title }}</h1>
-        <p class="mt-2">{{movieDetails.release_date}}</p>
-        <p class="text-blue1">{{movieDetails.tagline}}</p>
-        <p class="mt-5">{{ movieDetails.overview }}</p>
-      </div>
-    </div> -->
 
     <div class="container grid sm:flex px-[20px] sm:px-[80px] gap-5 sm:gap-20 mb-[60px]">
       <div class="poster-movies mt-[-80px] z-40 flex justify-center">
